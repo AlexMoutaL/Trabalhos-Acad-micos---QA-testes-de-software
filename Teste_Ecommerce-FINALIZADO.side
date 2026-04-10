@@ -1,0 +1,641 @@
+{
+  "id": "b0e7f443-d314-41bf-99c6-17e90bd9cb6f",
+  "version": "2.0",
+  "name": "Teste_Ecommerce",
+  "url": "https://www.mercadolivre.com.br",
+  "tests": [{
+    "id": "487622b6-a5cf-4ebe-8299-f990d1aca1a0",
+    "name": "CT02-APLICANDO FILTRO NA BUSCA DO PRODUTO",
+    "commands": [{
+      "id": "4b1f8101-ff9a-4490-bf86-681e40787a4b",
+      "comment": "",
+      "command": "//Abrir o site Mercado livre",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4523afe3-62d5-418f-abfd-e914d302d120",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ffbd045-cc83-417b-a651-fde635ea1ced",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1039",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cbe949f-022a-485f-b8e5-493810ddfbfe",
+      "comment": "",
+      "command": "//Clicar no campo de busca de produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c42770ff-a9f2-4a0b-aac3-15ae27241a6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62ac534-3341-4ad3-91b2-c03bb583ba0d",
+      "comment": "",
+      "command": "//Digitar o produto desejado",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf63d2ec-72c6-468f-a80e-a1ac5679930e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "notebook"
+    }, {
+      "id": "f3d21724-4172-4795-9ebe-2b4edcfa1efa",
+      "comment": "",
+      "command": "//Clicar na lupa para pesquisar produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc7b3f3c-cede-43dd-914d-0462f6ed0069",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-icon-search",
+      "targets": [
+        ["css=.nav-icon-search", "css:finder"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "001b1cfa-256f-4a28-b2e1-17a212dfc17b",
+      "comment": "",
+      "command": "//Escolher filtro de marca do produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03ad0f4f-7710-4b4f-b466-3aa0786f64ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-search-filter-dl:nth-child(5) .ui-search-filter-container:nth-child(6) .ui-search-filter-name",
+      "targets": [
+        ["css=.ui-search-filter-dl:nth-child(5) .ui-search-filter-container:nth-child(6) .ui-search-filter-name", "css:finder"],
+        ["xpath=//main[@id='root-app']/div/div/aside/section/div[5]/ul/li[6]/a/span", "xpath:idRelative"],
+        ["xpath=//div[5]/ul/li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Asus')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e1f537a-3098-4edc-b703-dcd6b53eacfd",
+      "comment": "",
+      "command": "//Escolher outro filtro (preço)",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcc18a57-ec5e-4bdb-8712-178472df2fc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-search-money-picker-desktop__li:nth-child(4) .ui-search-filter-name",
+      "targets": [
+        ["css=.ui-search-money-picker-desktop__li:nth-child(4) .ui-search-filter-name", "css:finder"],
+        ["xpath=//main[@id='root-app']/div/div/aside/section[2]/div[9]/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[9]/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mais de R$ 5.000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "06f79e3d-3cb0-4deb-b8a4-95cd7f83db8f",
+    "name": "CT01-BUSCA DE PRODUTO",
+    "commands": [{
+      "id": "1813d6a5-12d1-4b29-bbc1-08c1a0f3411b",
+      "comment": "",
+      "command": "//Abrir o site Mercado livre",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9a09b19-3b94-461a-89b5-3f06f40589ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c741819-e6b0-4776-973a-9f6b1f74a66a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1039",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aec5eeae-2f9e-4628-8bf3-249f2a1f1e89",
+      "comment": "",
+      "command": "//Clicar no campo de busca de produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe765e09-95da-48bf-bbf7-a8ba7ee28cac",
+      "comment": "",
+      "command": "click",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd39eae8-68b4-4488-8730-1a850e526b86",
+      "comment": "",
+      "command": "//Digitar o produto desejado",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f363631-a8d8-4aec-be85-eb7eb258341d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "televisão"
+    }, {
+      "id": "c1948c0d-0809-47ef-bd3a-d07e1dc1a949",
+      "comment": "",
+      "command": "//Clicar na lupa para buscar o produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e6c09fa-8f9b-47e0-a334-01341ca01fa5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-icon-search",
+      "targets": [
+        ["css=.nav-icon-search", "css:finder"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f1d9ce4-e646-418e-822d-04707994282f",
+      "comment": "",
+      "command": "//Rolar pela tela e confirmar se retornou o produto buscado",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0309b03b-f71a-4a44-83eb-0652bbe9f0b1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad",
+      "targets": [
+        ["linkText=Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad", "linkText"],
+        ["css=#\\_R_89dcjae_ .poly-component__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad')]", "xpath:link"],
+        ["xpath=//div[@id='_R_89dcjae_']/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=4mu41ycc7t11xlo1IujYPLONeIdd6OmPSWEmh0MZVKcCT7HRkerJdXc4Lbh%2FKizEuv7Dv751TWqeLbu7Oy7kHBoxe0FFXzaeBMOKk2PUcvUQZgnVSk9U%2BDzbeRLPn81%2BZddbF92sRHxsbBUh38NlES%2BveT%2FKGpiinTd8iQq6Le0hk1WmODcAu4HrcrtiOIVOm4KtDrTfcih34%2BOT62Bdt%2B7zkO%2F1bUuTsCtlFW46PVB1vUNX9WnjmTvNMe8rVO0rwgT2qONke45p%2BH928m8nhUlw6mZiYEagQRe1SR%2BwAvR9XmY4jB4PRODnsyB1xeJ8%2Fi5lwTU2k1M1sS53DUKhfQvbNhx215KgRx8I5%2BXKtk2BkQ9GYHN%2B0y9K2kzjjXoKJxahQwXcJdNTcpXoVobxNIomKva9T4A2d5SSClbovkrR%2FO2d%2FQDj9R%2FGaR0ZQqRqnkC%2FdheGj3eHr73%2FWFXLubP1GpNcXUhgoy87Z1zKX5uXqtxipC5IvFI1CyMGLrigZ85ddLJ8MubagjBQWJWepco4XfZnPJHXunyfHGXdLt3uwhoaMbC8TSHgmlmKGANzjE6WgVhvHucx7asxCW4gqGIlu%2BlCA74gMTLPZf8efEsZawa28VH68tOBNC7nXrIjorHDVCRzrRIpMFfguFsEH4p71Is34%2BKTxzJKB%2F6Bgy9OuabAntRQq4zSxmcmQzJpESrNqABSRruR%2FG3PqBOntys4mwU6q2H%2BDVjHpNgDIrq%2BkICe4FgFyoaDlW9go%2BOxsskHzUbZDJc9sLCfYdevWHJU9ysyhZiyqO9wLsOnnvQ%2BHerE7GjiN1gZgSxGu6fZ2VwNjMPyA9Mel22oBotWXbTwN%2B%2Fxkw2RnyOvALqfByyhib20MAeeP2ZOIU8pKpQoZCK44fCHEC9H9jVVVPwWvh72XlhQhVzrXh3TduJ69dt3MsccYh%2BpUBDZlh8%2BdoQ%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB51202548&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=f24d67a2-9580-46b1-b8ad-df0e757cb432&wid=MLB5435958784&sid=search')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd513029-bf39-4de1-897e-01b9651921de",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad",
+      "targets": [
+        ["linkText=Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad", "linkText"],
+        ["css=#\\_R_89dcjae_ .poly-component__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad')]", "xpath:link"],
+        ["xpath=//div[@id='_R_89dcjae_']/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=4mu41ycc7t11xlo1IujYPLONeIdd6OmPSWEmh0MZVKcCT7HRkerJdXc4Lbh%2FKizEuv7Dv751TWqeLbu7Oy7kHBoxe0FFXzaeBMOKk2PUcvUQZgnVSk9U%2BDzbeRLPn81%2BZddbF92sRHxsbBUh38NlES%2BveT%2FKGpiinTd8iQq6Le0hk1WmODcAu4HrcrtiOIVOm4KtDrTfcih34%2BOT62Bdt%2B7zkO%2F1bUuTsCtlFW46PVB1vUNX9WnjmTvNMe8rVO0rwgT2qONke45p%2BH928m8nhUlw6mZiYEagQRe1SR%2BwAvR9XmY4jB4PRODnsyB1xeJ8%2Fi5lwTU2k1M1sS53DUKhfQvbNhx215KgRx8I5%2BXKtk2BkQ9GYHN%2B0y9K2kzjjXoKJxahQwXcJdNTcpXoVobxNIomKva9T4A2d5SSClbovkrR%2FO2d%2FQDj9R%2FGaR0ZQqRqnkC%2FdheGj3eHr73%2FWFXLubP1GpNcXUhgoy87Z1zKX5uXqtxipC5IvFI1CyMGLrigZ85ddLJ8MubagjBQWJWepco4XfZnPJHXunyfHGXdLt3uwhoaMbC8TSHgmlmKGANzjE6WgVhvHucx7asxCW4gqGIlu%2BlCA74gMTLPZf8efEsZawa28VH68tOBNC7nXrIjorHDVCRzrRIpMFfguFsEH4p71Is34%2BKTxzJKB%2F6Bgy9OuabAntRQq4zSxmcmQzJpESrNqABSRruR%2FG3PqBOntys4mwU6q2H%2BDVjHpNgDIrq%2BkICe4FgFyoaDlW9go%2BOxsskHzUbZDJc9sLCfYdevWHJU9ysyhZiyqO9wLsOnnvQ%2BHerE7GjiN1gZgSxGu6fZ2VwNjMPyA9Mel22oBotWXbTwN%2B%2Fxkw2RnyOvALqfByyhib20MAeeP2ZOIU8pKpQoZCK44fCHEC9H9jVVVPwWvh72XlhQhVzrXh3TduJ69dt3MsccYh%2BpUBDZlh8%2BdoQ%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB51202548&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=f24d67a2-9580-46b1-b8ad-df0e757cb432&wid=MLB5435958784&sid=search')])[8]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Smart Tv 50 Aoc 4k Dled 50u7045/78g Roku Tv Quad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37711d4b-4fd7-49d7-bae5-fd9520a4109a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.andes-carousel-snapped__slide--active > .poly-component__link",
+      "targets": [
+        ["css=.andes-carousel-snapped__slide--active > .poly-component__link", "css:finder"],
+        ["xpath=//section[@id='_r_f_']/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=4mu41ycc7t11xlo1IujYPLONeIdd6OmPSWEmh0MZVKcCT7HRkerJdXc4Lbh%2FKizEuv7Dv751TWqeLbu7Oy7kHBoxe0FFXzaeBMOKk2PUcvUQZgnVSk9U%2BDzbeRLPn81%2BZddbF92sRHxsbBUh38NlES%2BveT%2FKGpiinTd8iQq6Le0hk1WmODcAu4HrcrtiOIVOm4KtDrTfcih34%2BOT62Bdt%2B7zkO%2F1bUuTsCtlFW46PVB1vUNX9WnjmTvNMe8rVO0rwgT2qONke45p%2BH928m8nhUlw6mZiYEagQRe1SR%2BwAvR9XmY4jB4PRODnsyB1xeJ8%2Fi5lwTU2k1M1sS53DUKhfQvbNhx215KgRx8I5%2BXKtk2BkQ9GYHN%2B0y9K2kzjjXoKJxahQwXcJdNTcpXoVobxNIomKva9T4A2d5SSClbovkrR%2FO2d%2FQDj9R%2FGaR0ZQqRqnkC%2FdheGj3eHr73%2FWFXLubP1GpNcXUhgoy87Z1zKX5uXqtxipC5IvFI1CyMGLrigZ85ddLJ8MubagjBQWJWepco4XfZnPJHXunyfHGXdLt3uwhoaMbC8TSHgmlmKGANzjE6WgVhvHucx7asxCW4gqGIlu%2BlCA74gMTLPZf8efEsZawa28VH68tOBNC7nXrIjorHDVCRzrRIpMFfguFsEH4p71Is34%2BKTxzJKB%2F6Bgy9OuabAntRQq4zSxmcmQzJpESrNqABSRruR%2FG3PqBOntys4mwU6q2H%2BDVjHpNgDIrq%2BkICe4FgFyoaDlW9go%2BOxsskHzUbZDJc9sLCfYdevWHJU9ysyhZiyqO9wLsOnnvQ%2BHerE7GjiN1gZgSxGu6fZ2VwNjMPyA9Mel22oBotWXbTwN%2B%2Fxkw2RnyOvALqfByyhib20MAeeP2ZOIU8pKpQoZCK44fCHEC9H9jVVVPwWvh72XlhQhVzrXh3TduJ69dt3MsccYh%2BpUBDZlh8%2BdoQ%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB51202548&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=f24d67a2-9580-46b1-b8ad-df0e757cb432&wid=MLB5435958784&sid=search')]", "xpath:href"],
+        ["xpath=//div/div/section/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9e0205b-a23d-4fd2-ab05-f8f6a1e4bce2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.andes-carousel-snapped__slide--active > .poly-component__link",
+      "targets": [
+        ["css=.andes-carousel-snapped__slide--active > .poly-component__link", "css:finder"],
+        ["xpath=//section[@id='_r_f_']/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=4mu41ycc7t11xlo1IujYPLONeIdd6OmPSWEmh0MZVKcCT7HRkerJdXc4Lbh%2FKizEuv7Dv751TWqeLbu7Oy7kHBoxe0FFXzaeBMOKk2PUcvUQZgnVSk9U%2BDzbeRLPn81%2BZddbF92sRHxsbBUh38NlES%2BveT%2FKGpiinTd8iQq6Le0hk1WmODcAu4HrcrtiOIVOm4KtDrTfcih34%2BOT62Bdt%2B7zkO%2F1bUuTsCtlFW46PVB1vUNX9WnjmTvNMe8rVO0rwgT2qONke45p%2BH928m8nhUlw6mZiYEagQRe1SR%2BwAvR9XmY4jB4PRODnsyB1xeJ8%2Fi5lwTU2k1M1sS53DUKhfQvbNhx215KgRx8I5%2BXKtk2BkQ9GYHN%2B0y9K2kzjjXoKJxahQwXcJdNTcpXoVobxNIomKva9T4A2d5SSClbovkrR%2FO2d%2FQDj9R%2FGaR0ZQqRqnkC%2FdheGj3eHr73%2FWFXLubP1GpNcXUhgoy87Z1zKX5uXqtxipC5IvFI1CyMGLrigZ85ddLJ8MubagjBQWJWepco4XfZnPJHXunyfHGXdLt3uwhoaMbC8TSHgmlmKGANzjE6WgVhvHucx7asxCW4gqGIlu%2BlCA74gMTLPZf8efEsZawa28VH68tOBNC7nXrIjorHDVCRzrRIpMFfguFsEH4p71Is34%2BKTxzJKB%2F6Bgy9OuabAntRQq4zSxmcmQzJpESrNqABSRruR%2FG3PqBOntys4mwU6q2H%2BDVjHpNgDIrq%2BkICe4FgFyoaDlW9go%2BOxsskHzUbZDJc9sLCfYdevWHJU9ysyhZiyqO9wLsOnnvQ%2BHerE7GjiN1gZgSxGu6fZ2VwNjMPyA9Mel22oBotWXbTwN%2B%2Fxkw2RnyOvALqfByyhib20MAeeP2ZOIU8pKpQoZCK44fCHEC9H9jVVVPwWvh72XlhQhVzrXh3TduJ69dt3MsccYh%2BpUBDZlh8%2BdoQ%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB51202548&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=f24d67a2-9580-46b1-b8ad-df0e757cb432&wid=MLB5435958784&sid=search')]", "xpath:href"],
+        ["xpath=//div/div/section/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3d0a4a8-108c-4159-a321-f5b3151f4a6b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,816)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d24da66b-1506-4745-bfdc-89deafd12dcc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1020)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4a10356-eb54-4eb3-8887-57b3dc08526e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1326)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfdce7f4-4d10-4b5a-888f-3ace59f8fe21",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1611)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc628680-ee59-4c25-9bce-433339af2508",
+    "name": "CT03-NAVEGAÇÃO ENTRE CATEGORIAS",
+    "commands": [{
+      "id": "c5c76621-43e7-4db4-9e0a-7f7f2df6c5ca",
+      "comment": "",
+      "command": "//Acessar o site mercado livre",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ab1f219-c540-43ef-be54-f26e2fc215c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "346986af-7908-4366-9637-c231f16391e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "781x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d28e10-85dc-47da-b226-1199c9dea7f5",
+      "comment": "",
+      "command": "//Acessar aba categorias e escolher Tecnologia ->Clicar em celulares e telefones",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de04fda8-d5c7-42f9-854e-0ac3cf4c4d27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Categorias",
+      "targets": [
+        ["linkText=Categorias", "linkText"],
+        ["css=.nav-menu-categories-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorias')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolivre.com.br/categorias#nav-header')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e8e05c-f796-4e08-8a1a-03a67a564f1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tecnologia",
+      "targets": [
+        ["linkText=Tecnologia", "linkText"],
+        ["css=.nav-categs-departments__selected", "css:finder"],
+        ["xpath=//a[contains(text(),'Tecnologia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tecnologia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "293e1e70-5461-4917-9676-ce4aef3f7789",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Celulares e Telefones",
+      "targets": [
+        ["linkText=Celulares e Telefones", "linkText"],
+        ["css=.nav-categs-detail__categ:nth-child(1) > .nav-categs-detail__title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Celulares e Telefones')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolivre.com.br/c/celulares-e-telefones#menu=categories')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Celulares e Telefones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32774933-5c12-4b7d-be42-0fc409ba66d0",
+      "comment": "",
+      "command": "//Acessar novamente a aba categorias e clicar em Ferramentas",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a62b6705-50f4-4407-85fa-f413068fc8e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Categorias",
+      "targets": [
+        ["linkText=Categorias", "linkText"],
+        ["css=.nav-menu-categories-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorias')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolivre.com.br/categorias#nav-header')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorias')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1339f2d1-b00c-4326-a3e6-04b3f961a7e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ferramentas",
+      "targets": [
+        ["linkText=Ferramentas", "linkText"],
+        ["css=.nav-categs-departments__list:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ferramentas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.mercadolivre.com.br/c/ferramentas#menu=categories')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ferramentas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dcea1ac-b37a-41ba-b05d-4b311e72cb68",
+      "comment": "",
+      "command": "//Verificar se o elemento de texto \"ferramentas\" está na página",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e67e37e6-e114-4848-89f2-756368601170",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.andes-typography",
+      "targets": [
+        ["css=.andes-typography", "css:finder"],
+        ["xpath=//main[@id='root-app']/div[3]/section/section/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MELHORES OFERTAS DE FERRAMENTAS"
+    }]
+  }, {
+    "id": "1ca7aa51-873b-43e7-88eb-c34ef02878bd",
+    "name": "CT04-ADICIONAR PRODUTO AO CARRINHO",
+    "commands": [{
+      "id": "38774966-7795-4d70-a50c-a5b033fd5b75",
+      "comment": "",
+      "command": "//Acessar o site mercado livre",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c2b9cad-cb1e-4021-802c-84939e282aa0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "935cc206-6b57-4af1-8f0e-6dcec7bb9027",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "781x870",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e32bf866-ac9a-40da-ad46-d698dc4a25e8",
+      "comment": "",
+      "command": "//Clicar no campo de busca do produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88371251-347f-4a69-bf15-60d8860c73db",
+      "comment": "",
+      "command": "click",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ba23f79-5001-4a1b-8bcc-d653e95d2bbd",
+      "comment": "",
+      "command": "//Digitar o produto desejado",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42e2cc6e-c2ce-4dc2-8552-c31d1363ea34",
+      "comment": "",
+      "command": "type",
+      "target": "id=cb1-edit",
+      "targets": [
+        ["id=cb1-edit", "id"],
+        ["name=as_word", "name"],
+        ["css=#cb1-edit", "css:finder"],
+        ["xpath=//input[@id='cb1-edit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fones de ouvido"
+    }, {
+      "id": "2e6a5e7b-96f2-4f4c-b110-19f369bef4c7",
+      "comment": "",
+      "command": "//Clicar no lupa de buscar produto",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fece0d0-e88e-4a9d-bd23-02ad6c2101f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-icon-search",
+      "targets": [
+        ["css=.nav-icon-search", "css:finder"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ffd4a7a-691d-462a-8387-1beeafcacd8b",
+      "comment": "",
+      "command": "//Escolher um produto e clicar nele",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50b98fe0-ebe1-4928-a14e-99091ab7c7dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fone de Ouvido Bluetooth 5.0 Kimaster TWS300 In-ear Branco",
+      "targets": [
+        ["linkText=Fone de Ouvido Bluetooth 5.0 Kimaster TWS300 In-ear Branco", "linkText"],
+        ["css=#\\_R_85dcjae_ .poly-component__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Fone de Ouvido Bluetooth 5.0 Kimaster TWS300 In-ear Branco')]", "xpath:link"],
+        ["xpath=//div[@id='_R_85dcjae_']/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=kVXgZO7m6zmx0aLMFrGQSrWvlIF8jiyDefIZPMhG1RDoUFqXKU%2F6KvkFNu67Jn%2B7Tzkkn3JDNjRL5AE5i3WxH5e5DRs2Q2AvR0uI3d6%2FXiQ1kYMhMMNNzIHxoAMQaquGUeU5b%2BseBY%2Fay6D42EE%2FKbssjLXsaLrcdkd%2FDNh%2FOTOyTjnQdWfYZKRUS1iMoxu%2FqUCQbp%2BIifXuCQPMh5QmE3yDUOYn7Q8P78ox4EWNuUxy%2BcdPEaNKMu22CYZZXEa4FTyhofTrIWU5Pk424F6IKO4GBZOMOPbk9DXctfKC7O2rS7YeqJU9EHRJhjG4Xde%2BvBVKU2YcvCpbEN6Q6RWoxyzRHqgxdJzgTHXmnmSu7DT7W4%2BkOD9Ev%2F09WDcjtR5veFzX%2Fqqywfnn0vGiF6I58Awbnhb31ZFYzl1ueOEzd5%2BGe4qCMQ80CX4y5M105TjIGa5Aqvr%2BXbaOHhxUWOsywNXAmXR%2FX9%2BEe4Qa06kZ2ROWMVSF9TDEh7F19NJlASUbZ79tspoOLELJSiDglmYeg9sV1hy3Eqi2DUr%2BJwsj7Qmh038z45JlBKLzoUlgHHpjv14w1J4jUrXqFJ4FRwzbDOMqXRvbX81%2FqSJjojIGIxeC4eMdKklFohFGHehy9wUzzKxRv0qM1gYhAqK1vCC%2F75Xfg%2FG741Sr0Rp2n%2FLxQJDtYsY20EbA8rw66lRl5HsJ%2B2xf8hccu5BYUNLUSh4yG7ifhT6XeQCPID%2F45%2B13vdFxgkEXqBKpQt7hJboP1X2ZB5BwfMhgzRsW5Gdnncw4%2BRU%2F96w%2Fv8KzHKCNDo7GOUjQoyzrWtRnuERQOhZ8NmLwxxfEFGWmEy5JGKz%2FJNWKEOXWZBH11pyvNxwzUl5%2BrY46VXNdmnTniKS%2Fd4b1ZMKrsl6D7HZay3xsHi06gWq%2FfgngRdw%2F3nN8qdVey5I2eRXoBepGLFqryuSZjzrS5vGw1rxSCqRhaxOMIFI%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB23922109&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=11a361ce-b366-4032-91bd-59513b407183&wid=MLB6304201368&sid=search')])[7]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fone de Ouvido Bluetooth 5.0 Kimaster TWS300 In-ear Branco')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5814120e-97b5-4872-a8d7-930f2c9fed18",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "810,766"
+    }, {
+      "id": "e4030f6a-8869-4ef9-b07c-63994b2164fb",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "810,766"
+    }, {
+      "id": "f6ba4cbf-c8dc-4f71-8795-990ba1c093df",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "810,766"
+    }, {
+      "id": "dd7a7490-5c48-416c-b82a-c1922950ec98",
+      "comment": "",
+      "command": "//Verificar presença do botão \"adicionar ao carrinho\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "868aec25-d933-44d9-9da5-d19564f8a113",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#\\_R_j6dqj569tbae_ > .andes-button__content",
+      "targets": [
+        ["css=#\\_R_j6dqj569tbae_ > .andes-button__content", "css:finder"],
+        ["xpath=//button[@id='_R_j6dqj569tbae_']/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39f93634-01b2-463a-b8f6-2dbdab0dc198",
+      "comment": "",
+      "command": "//Clicar no botão \"adicionar ao carrinho\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71d222e2-0467-472a-a502-04eaf838a2f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\_R_j6dqj569tbae_ > .andes-button__content",
+      "targets": [
+        ["css=#\\_R_j6dqj569tbae_ > .andes-button__content", "css:finder"],
+        ["xpath=//button[@id='_R_j6dqj569tbae_']/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0fe0bb5-b152-4527-9ffb-e47e502c5004",
+      "comment": "",
+      "command": "//Fechar janela sobreposta",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7fc2a1f-4ee4-413c-90a9-c0a999485e99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.andes-modal__close-button > svg",
+      "targets": [
+        ["css=.andes-modal__close-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "46dbcd7e-763c-4fee-922e-79b810e17a1c",
+      "comment": "",
+      "command": "//Clicar no ícone do carrinho",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03c0ce07-8796-497a-9e6f-8e35508bf8b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-icon-cart-quantity",
+      "targets": [
+        ["css=.nav-icon-cart-quantity", "css:finder"],
+        ["xpath=//a[@id='nav-cart']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "642086ce-5d06-4f77-80f8-801749ab9a9b",
+    "name": "ST-TESTE DE FUNCIONALIDADES E-COMMERCE",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["487622b6-a5cf-4ebe-8299-f990d1aca1a0", "06f79e3d-3cb0-4deb-b8a4-95cd7f83db8f", "cc628680-ee59-4c25-9bce-433339af2508", "1ca7aa51-873b-43e7-88eb-c34ef02878bd"]
+  }],
+  "urls": ["https://www.mercadolivre.com.br/"],
+  "plugins": []
+}
